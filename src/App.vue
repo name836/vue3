@@ -23,6 +23,7 @@ export default {
   setup() {
     const listData = reactive<Datas>({ data: [] });
     const Myscroll = ref<HTMLElement | string>("");
+    // --
    
     onMounted(() => {
 			axios.get('http://localhost:8000/delete').then((res)=>{
